@@ -1,0 +1,34 @@
+<template>
+  <div>
+    <!-- 二级占位符 -->
+    <router-view></router-view>
+
+    <van-tabbar route>
+      <van-tabbar-item replace to="/home" icon="home-o">首页</van-tabbar-item>
+      <van-tabbar-item replace to="/find" icon="search">找房</van-tabbar-item>
+      <van-tabbar-item replace to="/info">
+      <van-icon name="comment-o" slot="icon"/>
+      资讯</van-tabbar-item>
+      <van-tabbar-item replace to="/my">
+      <van-icon name="user-circle-o" slot="icon"/>
+      我的</van-tabbar-item>
+    </van-tabbar>
+  </div>
+</template>
+
+<script>
+export default {
+  created () { },
+  data () {
+    return {}
+  },
+  methods: {},
+  computed: {},
+  watch: {},
+  filters: {},
+  components: {}
+}
+</script>
+
+<style scoped lang='less'>
+</style>
